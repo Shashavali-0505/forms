@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Form</title>
+    <style>
+        .appli-form{
+            background-color: rgb(107, 107, 237);
+            color: rgb(255, 255, 255);
+        }
+
+        #heading{
+            color: rgb(167, 53, 182);
+        }
+
+        .button{
+            background-color: rgb(253, 109, 20);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            width: 100px;
+            /* height: 25px; */
+            padding: 10px 0 ;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 id="heading">Application Form</h1></center>
+    <div class="appli-form">
+        <form action="submission_form.html">
+        
+        <fieldset style="border: none;">
+            <!-- <legend></legend> -->
+             <table width="100%" cellpadding="10">
+                <tbody>
+                    <tr>
+                    <td><label for="FName">First Name:</label></td>
+                    <td><input type="text" name="FName" id="FName" required></td>
+                    
+                    <td><label for="LName">last Name:</label></td>
+                    <td><input type="text" name="LName" id="LName" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">Date of Birth:</label></td>
+                    <td><input type="date" name="Date-of-Birth" id="DOB" required></td>
+                    
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="text" name="Age" id="age" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender" required>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" id="gender">Male
+                        <input type="radio" name="gender" value="Female" id="gender">Female
+                        <input type="radio" name="gender" value="Other" id="gender">other
+                    </td>
+                   
+                    <td><label for="e-mail">Email Address:</label> </td>
+                    <td><input type="email" name="E-mail" id="e-mail" required></td>
+                </tr>
+                <tr>
+                    <td><label for="role" required>Position Available:</label></td>
+                    <td>
+                        <input type="radio" name="Position" value="Junior Developer">Junior Developer
+                        <input type="radio" name="Position" value="Mid-Level Developer">Mid-Level Developer
+                        <input type="radio" name="Position" value="Senior Developer">Senior Developer
+                        <!-- <select name="Position" id="role">
+                            <option value="" disabled selected>----select----</option>
+                            <option value="Junior Developer">Junior Developer</option>
+                            <option value="Mid-Level Developer">Mid-Level Developer</option>
+                            <option value="Senior Developer">Senior Developer</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="skills" required>Programming Languages:</label></td>
+                    <td><input type="checkbox" name="Skills" id="skills" value="Java">Java
+                        <input type="checkbox" name="Skills" id="skills" value="JavaScript">JavaScript
+                        <input type="checkbox" name="Skills" id="skills" value="Python">Python
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password" required></td>
+
+                    <td><label for="confirm-password">Confirm Password:</label></td>
+                    <td><input type="password" name="c-password" id="confirm-password" required></td>
+                </tr>
+                </tbody>
+             </table><br><br>
+             <center>
+                <input type="submit" class="button">
+                <input type="reset" class="button">
+             </center>
+        </fieldset>
+    </form>
+    </div>
+    
+</body>
+</html>
